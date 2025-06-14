@@ -1,0 +1,25 @@
+{
+  "name": "tieqi-image",
+  "version": "1.0.0",
+  "description": "基于Telegram的图床服务",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "create-kv": "node create-kv.js",
+    "setup": "npm run create-kv && npm run deploy"
+  },
+  "keywords": [
+    "图床",
+    "telegram",
+    "cloudflare"
+  ],
+  "author": "",
+  "license": "AGPL-3.0-with-Commons-Clause",
+  "dependencies": {
+    "hono": "^3.1.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.14.4"
+  }
+}
